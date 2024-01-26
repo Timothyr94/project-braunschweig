@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div
+      class="hero"
+      role="img"
+      aria-label="Schloss Arkaden lit up in sunshine"
+    >
+      <h1>BRAUNSCHWEIG</h1>
+      <h3>let's explore this city together</h3>
+    </div>
+
+    <div class="wrapper">
+      <h3 class="activity-h3">choose your travel style</h3>
+      <div class="activity" id="activity1">
+        <img
+          src="./images/ParkBS.jpg"
+          alt="lushious green park with a pond and an ancient structure"
+        />
+        <h2>Nature</h2>
+        <p>
+          Come join me for a picknick in one of the many city parks and after we
+          can go for stand-up paddleboard ride around the city
+        </p>
+      </div>
+      <div class="activity" id="activity2">
+        <img
+          src="./images/museumBS.jpg"
+          alt="natural history musseum with a livesize dinosaur infront"
+        />
+        <h2>Culture</h2>
+        <p>
+          You will be amazed by the ancient churches and medieval architecture
+          in the historical part of the city, along with many museums and art
+          galleries.
+        </p>
+      </div>
+      <div class="activity" id="activity3">
+        <img
+          src="./images/shoppingBS.jpg"
+          alt="schloss arkaden shopping center at night with a lit up fountain in the foreground"
+        />
+        <h2>Lifestyle</h2>
+        <p>
+          Offering plenty of shopping and high-end dining options, the inner
+          city along with the Schloss Arkaden can be a shoppers paradise.
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-img">
+        <img src="images/Timothy.jpg" />
+      </div>
+      <div class="card-text">
+        <h3 id="card-text-h3">Your guide</h3>
+        <p id="card-text-p">
+          "I am excited to show you everything my beautiful hometown has to
+          offer."
+        </p>
+        <h4 id="card-text-h4">Timothy Rees</h4>
+      </div>
+    </div>
+    <script>
+      document
+        .querySelector(".card")
+        .addEventListener("mouseover", function () {
+          document.getElementById("card-text-h3").textContent =
+            "Software Developer";
+        });
+      document.querySelector(".card").addEventListener("mouseout", function () {
+        document.getElementById("card-text-h3").textContent = "Your guide";
+      });
+      document
+        .querySelector(".card")
+        .addEventListener("mouseover", function () {
+          document.getElementById("card-text-p").textContent =
+            "my dream is to build useful websites and apps while working remotely and traveling the world";
+        });
+      document.querySelector(".card").addEventListener("mouseout", function () {
+        document.getElementById("card-text-p").textContent =
+          '"I am excited to show you everything my beautiful hometown has to offer."';
+      });
+    </script>
+  </body>
+</html>

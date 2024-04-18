@@ -12,7 +12,7 @@ body {
 }
 .hero {
   position: relative;
-  background-image: url("/Users/timothyrees/Software Engineering/Dev-Scrimba/project braunschweig/images/schloss-braunschweig.jpg");
+  background-image: url("./images/schloss-braunschweig.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
